@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'com.google.gms.google-services'
+    id 'maven-publish'
 }
 
 android {
@@ -35,4 +36,16 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-messaging:23.3.1'
+}
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.github.dorfaksoft' // گروه مورد نظر خود را وارد کنید
+            artifactId = 'com.pushstorm' // نام آرتیفکت مورد نظر خود را وارد کنید
+            version = '3.0.1' // نسخه مورد نظر خود را وارد کنید
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
 }
