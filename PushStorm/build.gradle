@@ -13,8 +13,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
         targetSdk 33
-        versionCode 1
-        versionName "3.0.4"
+        versionCode 20
+        versionName "3.0.5"
     }
 
     buildTypes {
@@ -45,7 +45,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.github.dorfaksoft'
                 artifactId = 'com.pushstorm'
-                version = '3.0.4'
+                version = '3.0.5'
             }
         }
     }
