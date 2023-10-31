@@ -14,7 +14,7 @@ android {
         consumerProguardFiles "consumer-rules.pro"
         targetSdk 33
         versionCode 20
-        versionName "3.0.6"
+        versionName "3.0.7"
     }
 
     buildTypes {
@@ -44,7 +44,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.github.dorfaksoft'
                 artifactId = 'com.pushstorm'
-                version = '3.0.6'
+                version = '3.0.7'
             }
         }
     }
