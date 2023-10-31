@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "PushstormSample"
 include ':app'
-include ':Pushstorm'
+include ':PushStorm'
